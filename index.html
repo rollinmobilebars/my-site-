@@ -629,27 +629,26 @@
     }
 
     .instagram-panel {
-      margin-top: 14px auto;
-      padding: 12px 16px 10px;
+      margin:16px auto;
+      padding:16px 20px;
       border: 1px solid #e5d8bc;
       border-radius: 18px;
       background: linear-gradient(120deg, #fffcf5, #fbf6eb);
       box-shadow: 0 3px 13px #80643817;
-      max-width: 380px;
-      margin-left: auto;
-      margin-right: auto;
-      max-hight: 420px;
-      overflow: hidden;
+      max-width: 100%;
+      width: 100%;
     }
 
     .instagram-header {
-      display: grid;
-      grid-template-columns: 80px minmax(0, 1fr) auto;
-      align-items: center;
-      gap: 17px;
       margin-bottom: 8px;
     }
-
+    .instagram-panel img,
+    .instagram-panel.instagram-media {
+      max-height: 300px;
+      width: 100%;
+      object-fit: cover;
+      margin-top: 0;
+    }
     .instagram-avatar {
       display: block;
       width: 80px;
